@@ -1,0 +1,26 @@
+<!--pages/goods_list/index.wxml-->
+<!-- <text>pages/goods_list/index.wxml</text> -->
+<!--  -->
+<search />
+<tabs tabs="{{tabs}}" bind:handleItemTap="handleItemTap">
+	<block wx:if="{{tabs[0].isSelect}}">
+
+		<view class="first_tab">
+			<navigator class="goods_item" wx:for="{{goods}}" 
+			wx:key="goods_id" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+				<!-- 左侧图片 -->
+				<view class="goods_img">
+					<image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+				</view>
+				<!-- 右侧信息 --> 
+				<view class="goods_info">
+					<view class="goods_name">{{item.goods_name}}</view>
+					<view class="goods_price">￥{{item.goods_price}}</view>
+				</view>
+			</navigator>
+		</view>
+
+	</block>
+	<block wx:elif="{{tabs[1].isSelect}}">这儿没有写</block>
+	<block wx:elif="{{tabs[2].isSelect}}">别看了,这里也没写</block>
+</tabs>

@@ -1,0 +1,23 @@
+/**app.wxss**/
+@import "./styles//iconfont.wxss";
+
+/* 全局引入 */
+page,
+view,
+text,
+swiper,
+swiper-item,
+image,
+navigator {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* 主题颜色 
+less中有变量
+wxss也支持变量
+*/
+page{
+  /* 定义主题颜色 */
+  --themeColor:"#eb4450"
+}

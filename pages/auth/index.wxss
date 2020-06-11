@@ -1,0 +1,4 @@
+/* pages/auth/index.wxss */
+.auth{
+  margin-top: 80rpx;
+}

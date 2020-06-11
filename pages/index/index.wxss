@@ -1,0 +1,59 @@
+/**index.wxss**/
+.swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+
+.swiper image {
+  width: 100%;
+}
+
+.index_cate {
+  display: flex;
+  box-shadow: 4rpx 4rpx 4rpx rgba(200, 200, 200, 0.7);
+}
+
+.index_cate navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+
+.index_cate image {
+  width: 100%;
+}
+
+.index_floor .floor_title image {
+  width: 100%;
+}
+
+.floor_list {
+  overflow: hidden;
+  /* 清楚浮动 */
+
+}
+
+.floor_title {
+  padding: 10rpx 0;
+}
+
+.floor_list navigator {
+  float: left;
+  width: 33.33%;
+}
+
+.floor_list image {
+
+  width: 100%;
+  height: 100%;
+}
+
+.floor_list navigator:nth-last-child(-n+4) {
+  height: 27.72711207vw;
+  border-left: 10rpx solid white;
+}
+
+.floor_list navigator:nth-child(2) image,
+.floor_list navigator:nth-child(3) image {
+
+  border-bottom: 10rpx solid white;
+}

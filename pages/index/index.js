@@ -1,0 +1,53 @@
+//index.js
+//获取应用实例
+import {request} from '../../request/index'
+Page({
+  data: {
+    //轮播图
+    swiperList:[],
+    //导航数组
+    catesList:[],
+    //楼层数据
+    floorList:[]
+  },
+  onLoad:function(){
+    //1发送异步请求获取轮播图
+    this.getSwiperList()
+    //2.获取导肮数据
+    this.getCatesList()
+    //3获取楼层数据
+    this.getFloorList()
+  },
+  //获取轮播图数据
+  getSwiperList(){
+    request({
+      url:'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata'
+    }).then(res=>{
+      this.setData({
+        swiperList:res.data.message
+      })
+    })
+  },
+  //获取导航数据
+  getCatesList(){
+    request({
+      url:"https://api-hmugo-web.itheima.net/api/public/v1/home/catitems"
+    }).then(res=>{
+      this.setData({
+        catesList:res.data.message
+      })
+    })
+  },
+  //获取楼层数据
+  getFloorList(){
+    request({
+      url:"https://api-hmugo-web.itheima.net/api/public/v1/home/floordata"
+    }).then(res=>{
+      console.log(res)
+      this.setData({
+        floorList:res.data.message
+      })
+    })
+  }
+
+})

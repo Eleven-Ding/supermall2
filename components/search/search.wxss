@@ -1,0 +1,18 @@
+/* components/search/search.wxss */
+@import "/styles/iconfont.wxss";
+.search {
+  height: 90rpx;
+  padding: 15rpx;
+  background-color: #eb4450;
+  color: rgb(193, 193, 193);
+
+}
+
+.search navigator {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,157 @@
+/* pages/cart/index.wxss */
+page{
+  padding-bottom: 90rpx;
+}
+.recive_address_row .address_btn {
+  padding: 20rpx;
+}
+
+.address_btn button {
+  width: 60%;
+}
+
+.user_info_raw {
+  display: flex;
+  padding: 20rpx;
+}
+
+.user_info {
+  flex: 6;
+}
+
+.user_phone {
+  flex: 3;
+  text-align: right;
+  font-size: 30rpx;
+}
+
+.img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart_title {
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: #ff5777;
+  border-top: 2rpx solid currentColor;
+  border-bottom: 2rpx solid currentColor;
+}
+
+.cart_main .cart_item {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.cart_chk_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart_img_wrap image {
+  width: 80%;
+}
+
+.cart_info_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666;
+}
+
+.price_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods_price {
+  color: #ff5777;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+
+.car_num-tool {
+  display: flex;
+}
+
+.num_edit {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc
+}
+
+.goods_num {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot_tool{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  height: 90rpx;
+  background-color: white;
+  border-top: 1rpx solid #ccc;
+}
+.all_chk_wrap{
+  flex:2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total_price_wrap{
+  flex: 4;
+  text-align: right;
+  padding-right: 25rpx;
+}
+.total_price_wrap text{
+  color: #ff5777;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.pay_wrap{
+  flex: 2;
+  background-color: #ff5777;
+  color: white;
+  font-size: 32rpx;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empty{
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #ff5777;
+  text-align: center;
+  padding: 50rpx;
+} 
